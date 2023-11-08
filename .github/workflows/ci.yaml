@@ -8,7 +8,7 @@ jobs:
     outputs:
       output1: ${{ steps.setup.outputs.test}}
     steps:
-      - id: step1
+      - id: setup
         run : echo "::set-output name=test::world"
   job2:
     runs-on: ubuntu-latest
